@@ -1582,28 +1582,3 @@ section {
     font-size: 0.95rem;
     vertical-align: middle;
 }
-
-html {
-    scrollbar-width: thin;             
-    scrollbar-color: #C80000 transparent;   
-}
-
-::-webkit-scrollbar {
-    width: 5px;               
-    height: 5px;        
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;       
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #9d060d;       
-    border-radius: 10px;
-    transition: background 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--color-primary);       
-}

@@ -291,27 +291,3 @@ body.dark-mode .btn-login-desktop{
     color: #0f0f0f;
 }
 
-body.dark-mode html {
-    scrollbar-width: thin;             
-    scrollbar-color: #C80000 transparent;   
-}
-
-body.dark-mode ::-webkit-scrollbar {
-    width: 5px;               
-    height: 5px;        
-}
-
-body.dark-mode ::-webkit-scrollbar-track {
-    background: transparent;       
-    border-radius: 10px;
-}
-
-body.dark-mode ::-webkit-scrollbar-thumb {
-    background: #9d060d;       
-    border-radius: 10px;
-    transition: background 0.3s ease;
-}
-
-body.dark-mode ::-webkit-scrollbar-thumb:hover {
-    background: #9d060d;       
-}

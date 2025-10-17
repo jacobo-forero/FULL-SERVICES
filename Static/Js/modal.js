@@ -37,7 +37,7 @@ const serviceData = {
         content: `
             Ofrecemos soluciones arquitectónicas sostenibles e innovadoras, abarcando diseño, planificación y ejecución integral de proyectos con identidad y tecnología.
         `,
-        images: ["Static/Images/FULL-IMG1-CARRUSEL.png", "Static/Images/FULL-IMG3-CARRUSEL.jpg"],
+        images: ["Static/Images/FULL-ARQ1.jpg", "Static/Images/FULL-ARQ2.jpg", "Static/Images/FULL-ARQ3.jpg", "Static/Images/FULL-ARQ4.jpg"],
         whatsapp: "https://wa.link/94tqjk"
     },
     5: {
@@ -54,15 +54,15 @@ const serviceData = {
             ¡Somos fabricantes de carrocerías con capacidad de 30 o 35 Toneladas, con dimensiones exteriores hasta de Largo: 12,50 m, Ancho: 2,60 m. Toda la estructura cuenta con su respetivo conector 7 vías, luces LED, sistema 12v y acabado en pintura poliuretano. Certificaciones ISO9001, ISO14001 e ISO45001.
         `,
         images: [
-            { src: "../Static/Images/Trailers/1.jpg", link: "../Templates/Servicios/Trailers1.html" },
-            { src: "../Static/Images/Trailers/2.jpg", link: "../Templates/Servicios/Trailers2.html" },
-            { src: "../Static/Images/Trailers/3.jpg", link: "../Templates/Servicios/Trailers3.html" },
+            { src: "Static/Images/Trailers/1.jpg", link: "../Templates/Servicios/Trailers1.html" },
+            { src: "Static/Images/Trailers/2.jpg", link: "../Templates/Servicios/Trailers2.html" },
+            { src: "Static/Images/Trailers/3.jpg", link: "../Templates/Servicios/Trailers3.html" },
             /*{ src: "../../Static/Images/Trailers/4.jpg", link: "../../Templates/Servicios/Trailers4.html" },*/
-            { src: "../Static/Images/Trailers/5.jpg", link: "../Templates/Servicios/Trailers5.html" },
-            { src: "../Static/Images/Trailers/6.jpg", link: "../Templates/Servicios/Trailers6.html" },
-            { src: "../Static/Images/Trailers/7.jpg", link: "../Templates/Servicios/Trailers7.html" },
-            { src: "../Static/Images/Trailers/8.jpg", link: "../Templates/Servicios/Trailers8.html" },
-            { src: "../Static/Images/Trailers/9.jpg", link: "../Templates/Servicios/Trailers9.html" }
+            { src: "Static/Images/Trailers/5.jpg", link: "../Templates/Servicios/Trailers5.html" },
+            { src: "Static/Images/Trailers/6.jpg", link: "../Templates/Servicios/Trailers6.html" },
+            { src: "Static/Images/Trailers/7.jpg", link: "../Templates/Servicios/Trailers7.html" },
+            { src: "Static/Images/Trailers/8.jpg", link: "../Templates/Servicios/Trailers8.html" },
+            { src: "Static/Images/Trailers/9.jpg", link: "../Templates/Servicios/Trailers9.html" }
         ],
         whatsapp: "https://wa.link/2ogans"
     }

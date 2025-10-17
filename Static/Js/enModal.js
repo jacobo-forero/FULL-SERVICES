@@ -37,7 +37,7 @@ const serviceData = {
         content: `
             We provide sustainable and innovative architectural solutions, covering the design, planning, and complete execution of projects with identity and cutting-edge technology.
         `,
-        images: ["Static/Images/FULL-IMG1-CARRUSEL.png", "Static/Images/FULL-IMG3-CARRUSEL.jpg"],
+        images: ["Static/Images/FULL-ARQ1.jpg", "Static/Images/FULL-ARQ2.jpg"],
         whatsapp: "https://wa.link/94tqjk"
     },
     5: {

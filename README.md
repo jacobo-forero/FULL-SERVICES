@@ -57,8 +57,8 @@
 ## 👥 Autores
 
 **FULL SERVICES S.A.S**  
-Desarrollo y diseño web por **IA FULL SERVICES**  
-📧 sistemas@fullservices.com.co 
+Desarrollo y diseño web por **JACOBO FORERO**  
+📧 sistemas@fullservices.com.co
 🌐 [https://jacobo-forero.github.io/FULL-SERVICES/](https://jacobo-forero.github.io/FULL-SERVICES/)
 
 ---

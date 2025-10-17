@@ -77,20 +77,28 @@ document.querySelectorAll('.btn-modal').forEach(btn => {
             let mediaHTML = "";
 
             // Caso especial: Trailers (collage con enlaces)
+            const BASE_URL = "https://jacobo-forero.github.io/FULL-SERVICES/";
+
+            function joinURL(base, path) {
+                if (!base.endsWith('/')) base += '/';
+                if (path.startsWith('/')) path = path.substring(1);
+                return base + path;
+            }
+
             if (id === "6") {
                 mediaHTML = `
-                <div class="special-collage">
-                ${data.images.map(img => `
-                    <a href="${BASE_URL + img.link}" class="collage-item" target="_blank">
-                    <img src="${BASE_URL + img.src}" alt="${data.title}">
-                    <div class="collage-overlay">
-                        <span>Ver más</span>
-                        </div>
-                    </a>
-                    `).join('')}
-                </div>
-            `;
-            }       
+                    <div class="special-collage">
+                        ${data.images.map(img => `
+                            <a href="${joinURL(BASE_URL, img.link)}" class="collage-item" target="_blank" rel="noopener noreferrer">
+                                <img src="${joinURL(BASE_URL, img.src)}" alt="${data.title}">
+                                <div class="collage-overlay">
+                                    <span>Ver más</span>
+                                </div>
+                            </a>
+                        `).join('')}
+                    </div>
+                `;
+            }    
 
             // Si tiene imágenes (solo si no es Trailers)
             else if (data.images && data.images.length > 0) {

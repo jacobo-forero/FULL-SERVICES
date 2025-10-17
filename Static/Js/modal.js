@@ -54,16 +54,15 @@ const serviceData = {
             ¡Somos fabricantes de carrocerías con capacidad de 30 o 35 Toneladas, con dimensiones exteriores hasta de Largo: 12,50 m, Ancho: 2,60 m. Toda la estructura cuenta con su respetivo conector 7 vías, luces LED, sistema 12v y acabado en pintura poliuretano. Certificaciones ISO9001, ISO14001 e ISO45001.
         `,
         images: [
-            { src: "Static/Images/Trailers/1.jpg", link: "https://jacobo-forero.github.io/FULL-SERVICES/Templates/Servicios/Trailers1.html" },
-            { src: "Static/Images/Trailers/2.jpg", link: "https://jacobo-forero.github.io/FULL-SERVICES/Templates/Servicios/Trailers2.html" },
-            { src: "Static/Images/Trailers/3.jpg", link: "https://jacobo-forero.github.io/FULL-SERVICES/Templates/Servicios/Trailers3.html" },
-            /*{ src: "../../Static/Images/Trailers/4.jpg", link: "../../Templates/Servicios/Trailers4.html" },*/
-            { src: "Static/Images/Trailers/5.jpg", link: "https://jacobo-forero.github.io/FULL-SERVICES/Templates/Servicios/Trailers5.html" },
-            { src: "Static/Images/Trailers/6.jpg", link: "https://jacobo-forero.github.io/FULL-SERVICES/Templates/Servicios/Trailers6.html" },
-            { src: "Static/Images/Trailers/7.jpg", link: "https://jacobo-forero.github.io/FULL-SERVICES/Templates/Servicios/Trailers7.html" },
-            { src: "Static/Images/Trailers/8.jpg", link: "https://jacobo-forero.github.io/FULL-SERVICES/Templates/Servicios/Trailers8.html" },
-            { src: "Static/Images/Trailers/9.jpg", link: "https://jacobo-forero.github.io/FULL-SERVICES/Templates/Servicios/Trailers9.html" }
-        ],
+        { src: "Static/Images/Trailers/1.jpg", link: "Templates/Servicios/Trailers1.html" },
+        { src: "Static/Images/Trailers/2.jpg", link: "Templates/Servicios/Trailers2.html" },
+        { src: "Static/Images/Trailers/3.jpg", link: "Templates/Servicios/Trailers3.html" },
+        { src: "Static/Images/Trailers/5.jpg", link: "Templates/Servicios/Trailers5.html" },
+        { src: "Static/Images/Trailers/6.jpg", link: "Templates/Servicios/Trailers6.html" },
+        { src: "Static/Images/Trailers/7.jpg", link: "Templates/Servicios/Trailers7.html" },
+        { src: "Static/Images/Trailers/8.jpg", link: "Templates/Servicios/Trailers8.html" },
+        { src: "Static/Images/Trailers/9.jpg", link: "Templates/Servicios/Trailers9.html" }
+    ],
         whatsapp: "https://wa.link/2ogans"
     }
 };
@@ -80,18 +79,19 @@ document.querySelectorAll('.btn-modal').forEach(btn => {
             // Caso especial: Trailers (collage con enlaces)
             if (id === "6") {
                 mediaHTML = `
-                    <div class="special-collage">
-                        ${data.images.map(img => `
-                            <a href="${img.link}" class="collage-item" target="_blank">
-                                <img src="${img.src}" alt="${data.title}">
-                                <div class="collage-overlay">
-                                    <span>Ver más</span>
-                                </div>
-                            </a>
-                        `).join('')}
-                    </div>
-                `;
-            }
+                <div class="special-collage">
+                ${data.images.map(img => `
+                    <a href="${BASE_URL + img.link}" class="collage-item" target="_blank">
+                    <img src="${BASE_URL + img.src}" alt="${data.title}">
+                    <div class="collage-overlay">
+                        <span>Ver más</span>
+                        </div>
+                    </a>
+                    `).join('')}
+                </div>
+            `;
+            }       
+
             // Si tiene imágenes (solo si no es Trailers)
             else if (data.images && data.images.length > 0) {
                 mediaHTML = `
@@ -100,14 +100,18 @@ document.querySelectorAll('.btn-modal').forEach(btn => {
                     </div>
                 `;
             }
-            // Si tiene video
             else if (data.videos && data.videos.length > 0) {
+                // Convertir URL corta de YouTube a formato embebido
+                const videoURL = data.videos[0].replace("youtu.be/", "www.youtube.com/embed/");
                 mediaHTML = `
                     <div class="modal-gallery video">
-                        <video class="modal-video" controls preload="metadata">
-                            <source src="${data.videos[0]}" type="video/mp4">
-                            Tu navegador no soporta videos.
-                        </video>
+                        <iframe class="modal-video" 
+                            src="${videoURL}" 
+                            title="${data.title}" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 `;
             }

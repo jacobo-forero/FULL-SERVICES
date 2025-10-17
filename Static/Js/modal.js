@@ -1,3 +1,5 @@
+const BASE_URL = "https://jacobo-forero.github.io/FULL-SERVICES/";
+
 const modal = document.getElementById('serviceModal');
 const modalBody = document.getElementById('modalBody');
 const closeModal = document.querySelector('.modal-close');
@@ -75,9 +77,6 @@ document.querySelectorAll('.btn-modal').forEach(btn => {
 
         if (data) {
             let mediaHTML = "";
-
-            // Caso especial: Trailers (collage con enlaces)
-            const BASE_URL = "https://jacobo-forero.github.io/FULL-SERVICES/";
 
             function joinURL(base, path) {
                 if (!base.endsWith('/')) base += '/';

@@ -1,3 +1,5 @@
+const BASE_URL = "https://jacobo-forero.github.io/FULL-SERVICES/";
+
 const modal = document.getElementById('serviceModal');
 const modalBody = document.getElementById('modalBody');
 const closeModal = document.querySelector('.modal-close');
@@ -76,20 +78,28 @@ document.querySelectorAll('.btn-modal').forEach(btn => {
         if (data) {
             let mediaHTML = "";
 
+            function joinURL(base, path) {
+                if (!base.endsWith('/')) base += '/';
+                if (path.startsWith('/')) path = path.substring(1);
+                return base + path;
+            }
+
             if (id === "6") {
                 mediaHTML = `
                     <div class="special-collage">
                         ${data.images.map(img => `
-                            <a href="${img.link}" class="collage-item" target="_blank">
-                                <img src="${img.src}" alt="${data.title}">
+                            <a href="${joinURL(BASE_URL, img.link)}" class="collage-item" target="_blank" rel="noopener noreferrer">
+                                <img src="${joinURL(BASE_URL, img.src)}" alt="${data.title}">
                                 <div class="collage-overlay">
-                                    <span>View more</span>
+                                    <span>Ver más</span>
                                 </div>
                             </a>
                         `).join('')}
                     </div>
                 `;
-            }
+            }    
+
+            // Si tiene imágenes (solo si no es Trailers)
             else if (data.images && data.images.length > 0) {
                 mediaHTML = `
                     <div class="modal-gallery collage">
@@ -98,22 +108,29 @@ document.querySelectorAll('.btn-modal').forEach(btn => {
                 `;
             }
             else if (data.videos && data.videos.length > 0) {
+                // Convertir URL corta de YouTube a formato embebido
+                const videoURL = data.videos[0].replace("youtu.be/", "www.youtube.com/embed/");
                 mediaHTML = `
                     <div class="modal-gallery video">
-                        <video class="modal-video" controls preload="metadata">
-                            <source src="${data.videos[0]}" type="video/mp4">
-                            Your browser does not support videos.
-                        </video>
+                        <iframe class="modal-video" 
+                            src="${videoURL}" 
+                            title="${data.title}" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 `;
             }
 
+            // Contenido final del modal
             modalBody.innerHTML = `
                 <h2>${data.title}</h2>
                 <p>${data.content}</p>
                 ${mediaHTML}
             `;
 
+            // Link de WhatsApp
             whatsappLink.href = data.whatsapp;
 
             modal.style.display = 'flex';

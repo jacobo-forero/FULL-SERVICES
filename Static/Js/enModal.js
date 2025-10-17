@@ -1,5 +1,7 @@
-const BASE_URL = "https://jacobo-forero.github.io/FULL-SERVICES/";
-
+const BASE_URL = window.location.origin.includes("github.io")
+    ? "https://jacobo-forero.github.io/FULL-SERVICES/"
+    : "";
+    
 const modal = document.getElementById('serviceModal');
 const modalBody = document.getElementById('modalBody');
 const closeModal = document.querySelector('.modal-close');

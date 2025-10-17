@@ -54,29 +54,18 @@
 
 ---
 
-## 📦 Despliegue en GitHub Pages
-
-1. Subir el proyecto al repositorio `FULL-SERVICES`.
-2. Ir a **Settings → Pages**.
-3. En **Branch**, seleccionar `main` y carpeta `/ (root)`.
-4. Guardar y esperar unos segundos hasta que el sitio esté disponible.
-
-🧭 Recuerda: las rutas de archivos deben incluir el prefijo `/FULL-SERVICES/` para que funcionen correctamente en GitHub Pages.
-
----
-
 ## 👥 Autores
 
 **FULL SERVICES S.A.S**  
 Desarrollo y diseño web por **IA FULL SERVICES**  
-📧 contacto@fullservices.com  
+📧 sistemas@fullservices.com.co 
 🌐 [https://jacobo-forero.github.io/FULL-SERVICES/](https://jacobo-forero.github.io/FULL-SERVICES/)
 
 ---
 
 ## 🧾 Licencia
 
-Este proyecto es propiedad de **FULL SERVICES S.A.S**  
+Este proyecto es propiedad de **S&J FULL SERVICES S.A.S**  
 © 2025 — Todos los derechos reservados.  
 Prohibida la reproducción o redistribución sin autorización escrita.
 

@@ -456,3 +456,17 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 1024px) {
+    .hero-background {
+        background-attachment: scroll !important; 
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-background {
+        background-size: cover;
+        background-position: center center;
+        transform: scale(1.05);
+    }
+}

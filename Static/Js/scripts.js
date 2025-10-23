@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         return false;
     }
-    if (e.ctrlKey && (e.key === 'U' || e.key === 's' || e.key === 'S')) {
+    if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S')) {
         e.preventDefault();
         return false;
     }
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         img.addEventListener('contextmenu', e => e.preventDefault());
 
-      if (!img.closest('.no-overlay')) { // si quieres excluir alguna imagen, pon .no-overlay en su contenedor
+    if (!img.closest('.no-overlay')) { 
         const wrapper = document.createElement('div');
         wrapper.className = 'img-protect-wrapper';
         img.parentNode.insertBefore(wrapper, img);

@@ -291,3 +291,59 @@ body.dark-mode .btn-login-desktop{
     color: #0f0f0f;
 }
 
+body.dark-mode {
+    --color-background: #121212;
+    --color-text: #e0e0e0;
+    --color-border: #333;
+}
+
+/* Hero */
+body.dark-mode .blog-hero {
+    background: linear-gradient(135deg, #880000 0%, var(--color-primary) 50%, #880000 100%);
+    color: #fff;
+}
+
+/* Botones de filtro */
+body.dark-mode .blog-filter-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+body.dark-mode .blog-filter-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+body.dark-mode .blog-filter-btn.active {
+    background-color: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+}
+
+/* Categoría de los posts */
+body.dark-mode .blog-post-category {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+/* Tarjetas de post */
+body.dark-mode .blog-post-card {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .blog-post-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Textos */
+body.dark-mode .blog-post-content h4 {
+    color: #ffffff;
+}
+
+body.dark-mode .blog-post-content p {
+    color: #cccccc;
+}

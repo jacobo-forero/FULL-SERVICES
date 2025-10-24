@@ -340,53 +340,143 @@
 
 @media (max-width: 768px) {
     .back-to-top {
-    bottom: 15px;
-    right: 15px;
-    width: 38px;
-    height: 38px;
+        bottom: 25px; 
+        right: 20px;  
+        width: 38px;
+        height: 38px;
     }
 
     .back-to-top i {
-    font-size: 1rem;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .back-to-top {
-    bottom: 10px;
-    right: 10px;
-    width: 35px;
-    height: 35px;
+        bottom: 20px; 
+        right: 18px; 
+        width: 35px;
+        height: 35px;
     }
 
     .back-to-top i {
-    font-size: 0.9rem;
+        font-size: 0.9rem;
     }
 }
 
-@media (max-width: 900px) {
-    .historia-texto {
-    column-count: 1; 
-    padding: 0;
+@media (max-width: 1024px) {
+    .blog-history-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .blog-history-image {
+        order: -1;
+    }
+
+    .blog-values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .blog-posts-section .blog-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
     }
 }
 
-@media (max-width: 900px) {
-    .blog-contenido {
-    margin: 4rem 1rem;
-    padding: 1.5rem;
+/* Móviles */
+@media (max-width: 768px) {
+    .blog-hero {
+        padding: 8rem 0 3.5rem;
     }
 
-    .historia h2, .valores h2 {
-    text-align: center;
+    .blog-hero-title {
+        font-size: 1.6rem;
     }
 
-    .historia-texto {
-    padding: 0;
+    .blog-hero-subtitle {
+        font-size: 1rem;
     }
 
-    .valores {
-    margin-top: 3rem;
+    .blog-section-title {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .blog-values-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .blog-value-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .blog-posts-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .blog-filter-buttons {
+        justify-content: center;
+    }
+
+    .blog-filter-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+    .blog-hero {
+        padding: 7rem 0 2rem;
+    }
+
+    .blog-hero-title {
+        font-size: 1.4rem;
+    }
+
+    .blog-hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .blog-history-content {
+        gap: 2rem;
+    }
+
+    .blog-values-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .blog-value-card h3 {
+        font-size: 1rem;
+    }
+
+    .blog-value-card p {
+        font-size: 0.85rem;
+    }
+
+    .blog-posts-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .blog-post-card {
+        border-radius: 10px;
+    }
+
+    .blog-load-more-btn {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
     }
 }
 

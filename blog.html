@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- HEADER -->
     <header class="header" id="header">
         <div class="container">
             <div class="header-content">
@@ -76,11 +75,20 @@
         </div>
     </header>
 
-    <main class="blog-contenido">
-        <section class="historia">
-            <div class="historia-texto">
-                <h2 id="inicio">Nuestra Historia</h2>
-                <p>
+    <section id="inicio" class="blog-hero">
+        <div class="blog-container">
+            <h2 class="blog-hero-title">Bienvenido a Nuestro Blog</h2>
+            <p class="blog-hero-subtitle">Conoce nuestra historia, valores y mantente al día con nuestras últimas novedades</p>
+        </div>
+    </section>
+
+    <section id="nosotros" class="blog-about-section">
+        <div class="blog-container">
+            <h2 class="blog-section-title">Nuestra Historia</h2>
+            
+            <div class="blog-history-content">
+                <div class="blog-history-text">
+                    <p>
                     En la tierra de Orito, Putumayo donde el petroleo yacía escondido y las ambiciones de muchos originaba violencia por doquier, nace un hombre llamado Saúl Delgado que después de atravesar cientos de dificultades, adquirir experiencias y determinarse a no temer por las circunstancias del terror inducido por organizaciones delictivas al margen de la ley, decide emprender con gran osadía lo que hoy se conoce como una de las compañías con más reconocimiento y liderazgo en la prestación de servicios petroleros en Colombia.<br> <br>
                     Fue el 24 de mayo de 1995 que la compañía Full Services es oficialmente fundada al obtener un contrato de transporte con Ecopetrol , y poniendo a disposición su flota de camiones y tractomulas, la cual creció a medida que aumentaban sus ingresos y su visión empresarial. En 1997 se vincula el hijo mayor de Don Saul, el Ingeniero Civil Victor Delgado y juntos combinando la experiencia, los conocimientos de avanzada y formando un gran equipo talentoso logran iniciar una etapa de diversificación que se afianzo mucho más en el 2003, al adquirir una maquina de Work Over Modelo Cooper 550, la cual se encontraba en mal estado y su reconstrucción demandaba un esfuerzo que exigió un transcurso de 3 años que al estar completamente en funcionamiento la alquila a la empresa Brisa logrando prestar servicios de Work Over y perforación dentro del territorio colombiano. Es así cuando Full Services abren sus oficinas en Bogotá, llevando la dirección la esposa e hijo de Don Saul Delgado; la señora Sandra Cisneros y el Ingeniero Victor Delgado.
                     <br> <br>
@@ -88,48 +96,90 @@
                     <br>
                     Hoy seguimos creciendo, impulsados por el compromiso de nuestro equipo y la visión de liderar el sector con calidad y responsabilidad.
                 </p>
+                </div>
+                
+                <div class="blog-history-image">
+                    <img src="Static/Images/blog-image.JPG" alt="Placa conmemorativa 1995" />
+                </div>
             </div>
-            <div class="historia-imagen">
-                <img src="Static/Images/FULL-BLOG.jpg" alt="Historia de Full Services">
-            </div>
-        </section>
-        
-        <section class="valores">
-            <h2>Valores Corporativos</h2>
-            <div class="valores-grid">
-                <div class="valor-card">
-                    <i class="fa-solid fa-people-group"></i>
+
+            <h2 class="blog-section-title values-title">Valores Corporativos</h2>
+            
+            <div class="blog-values-grid">
+                <div class="blog-value-card">
+                    <div class="blog-value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
                     <h3>INTEGRIDAD</h3>
                     <p>Pilar fundamental de nuestra existencia es que cada labor que desempeñamos sea llevada a cabo con total transparencia, que todo aquel que sea parte de Full Services actúe con plenitud siempre manteniendo intacta su reputación y calidad humana.</p>
                 </div>
 
-                <div class="valor-card">
-                    <i class="fa-solid fa-lightbulb"></i>
+                <div class="blog-value-card">
+                    <div class="blog-value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="8" r="7"></circle>
+                        </svg>
+                    </div>
                     <h3>BIENESTAR</h3>
                     <p>En Full Services estamos convencidos que todos somos parte de una misma familia, que nos cuidamos, colaboramos y nos respetamos unánimemente para alcanzar un alto bienestar común, evitando caer en la discordia o el egoísmo.</p>
                 </div>
 
-                <div class="valor-card">
-                    <i class="fa-solid fa-handshake"></i>
+                <div class="blog-value-card">
+                    <div class="blog-value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
                     <h3>EXCELENCIA</h3>
                     <p>Somos una compañía en continuo mejoramiento, atentos a cada detalle para alcanzar una magnificencia corporativa. Sabemos que la excelencia se alcanza todos los días con resultados, soluciones y no excusas o justificaciones.</p>
                 </div>
-                
-                <div class="valor-card">
-                    <i class="fa-solid fa-helmet-safety"></i>   
+
+                <div class="blog-value-card">
+                    <div class="blog-value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <polyline points="17 11 19 13 23 9"></polyline>
+                        </svg>
+                    </div>
                     <h3>COMPROMISO</h3>
                     <p>Cuando iniciamos cualquier obra u operación no tenemos excusa alguna para no concretarla completamente. Tenemos el sentido de propiedad y responsabilidad permitiendonos que todos nuestros clientes se sientan respaldados y seguros que alcanzaremos todos los objetivos a los cuales nos hemos comprometido.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- Botón Back to Top -->
+    <section id="posts" class="blog-posts-section">
+        <div class="blog-container">
+            <div class="blog-section-header">
+                <h2 class="blog-section-title">Últimas Publicaciones</h2>
+                <div class="blog-filter-buttons">
+                    <button class="blog-filter-btn active" data-filter="all">Todas</button>
+                    <button class="blog-filter-btn" data-filter="noticias">Noticias</button>
+                    <button class="blog-filter-btn" data-filter="eventos">Eventos</button>
+                    <button class="blog-filter-btn" data-filter="logros">Logros</button>
+                </div>
+            </div>
+            
+            <div class="blog-posts-layout">
+                <div class="blog-posts-main">
+                    <div id="blog-posts-container" class="blog-posts-grid"></div>
+                    </div>
+                    <button id="load-more" class="blog-load-more-btn">Cargar más publicaciones</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -196,18 +246,14 @@
     </footer>
 
     <script src="Static/Js/scripts.js"></script>
+    <script src="Static/Js/blog.js"></script>
     <script src="Static/Js/darkmode.js"></script>
     <script src="Static/Js/menu.js"></script>
     <script src="Static/Js/header.js"></script>
-    <script src="Static/Js/contador.js"></script>
     <script src="Static/Js/scroll.js"></script>
-    <script src="Static/Js/form.js"></script>
     <script src="Static/Js/smooth.js"></script>
-    <script src="Static/Js/carrusel.js"></script>
-    <script src="Static/Js/about.js"></script>
-    <script src="Static/Js/modal.js"></script>
-    <script src="Static/Js/partners.js"></script>
     <script src="Static/Js/backToTop.js"></script>
+
 
 </body>
 </html>

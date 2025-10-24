@@ -5,7 +5,7 @@ const postsData = [
     author: "Full Services",
     content:
         "Full Services cumple tres décadas de crecimiento, compromiso y excelencia. Gracias a nuestros colaboradores y clientes por ser parte de esta historia. ¡Vamos por muchos años más de logros y servicio!",
-    category: "Achievements",
+    category: "Succeses",
     date: "1995-05-25",
     image: "Static/Images/FULL-BLOG.jpg",
     },
@@ -183,7 +183,7 @@ function formatDate(dateString) {
 }
 
 function getCategoryName(category) {
-    const categories = { noticias: "Noticias", eventos: "Eventos", logros: "Logros" };
+    const categories = { noticias: "News", eventos: "Events", logros: "Succeses" };
     return categories[category] || category;
 }
 

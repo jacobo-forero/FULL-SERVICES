@@ -40,15 +40,9 @@ const postsData = [
     },
 ];
 
-// ===============================
-// ⚙️ Variables globales
-// ===============================
 let currentFilter = "all";
 let displayedPosts = 6;
 
-// ===============================
-// 🚀 Inicialización
-// ===============================
 document.addEventListener("DOMContentLoaded", () => {
     renderPosts();
     initializeFilters();
@@ -56,9 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => initializePostCarousels(), 300);
 });
 
-// ===============================
-// 📰 Renderizar posts
-// ===============================
 function renderPosts() {
     const postsContainer = document.getElementById("blog-posts-container");
     if (!postsContainer) return;
@@ -75,9 +66,6 @@ function renderPosts() {
     updateLoadMoreButton(filteredPosts.length);
 }
 
-// ===============================
-// 🧩 Crear tarjeta de post
-// ===============================
 function createPostCard(post) {
     const images = Array.isArray(post.image)
     ? post.image
@@ -185,9 +173,6 @@ function initializePostCarousels() {
     });
 }
 
-// ===============================
-// 📅 Utilidades
-// ===============================
 function formatDate(dateString) {
     const date = new Date(dateString);
     return date.toLocaleDateString("es-ES", {

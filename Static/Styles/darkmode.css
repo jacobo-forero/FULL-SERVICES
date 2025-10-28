@@ -359,7 +359,7 @@ body.dark-mode .horario-section {
     background-image: url('../Images/idea.webp');
     background-repeat: no-repeat;
     background-position: center 41%;
-    background-size: 100% auto;
+    background-size: cover;
     overflow: hidden;
     z-index: 0;
 }

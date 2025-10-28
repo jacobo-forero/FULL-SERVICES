@@ -560,3 +560,53 @@
         transform: scale(1.05);
     }
 }
+
+@media (max-width: 768px) {
+    .horario-section {
+        padding: 120px 15px;
+        background-size: cover;
+        background-position: center 55%; /* ajusta el fondo un poco más abajo */
+    }
+
+    .horario-card {
+        width: 90%;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .icon-container {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon-container i {
+        font-size: 2rem;
+    }
+
+    .horario-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .horario-item span {
+        font-size: 0.85rem;
+    }
+
+    .horario-item strong {
+        font-size: 0.95rem;
+    }
+
+    .contacto {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .horario-section {
+        padding: 100px 10px;
+        background-position: center 65%;
+    }
+
+    .horario-card {
+        padding: 25px 18px;
+    }
+}

@@ -72,3 +72,8 @@
     transform: translateY(0);
     opacity: 1;
 }
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 25px rgba(255, 0, 0, 0.4); }
+    50% { transform: scale(1.05); box-shadow: 0 0 40px rgba(255, 0, 0, 0.6); }
+}

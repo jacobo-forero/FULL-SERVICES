@@ -1384,7 +1384,7 @@ section {
     border-radius: 12px;
     text-align: center;
     transition: var(--transition);
-    border: 1px solid rgba(200, 0, 0, 0.2); /* borde suave rojo */
+    border: 1px solid rgba(200, 0, 0, 0.2);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -1621,6 +1621,116 @@ section {
     transform: translateY(-3px);
 }
 
+/* HORARIO */
+.horario-card {
+    background: linear-gradient(145deg, #ffffff, #f3f3f3);
+    border-radius: 28px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.1), inset 0 0 8px rgba(0, 0, 0, 0.05);
+    width: 340px;
+    padding: 40px 30px;
+    text-align: center;
+    color: #222;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.horario-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.2);
+}
+
+.icon-container {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    background: radial-gradient(circle at 30% 30%, #ff2a2a, #b00000);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.icon-container i {
+    font-size: 2.5rem;
+    color: var(--color-surface);
+    filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.5));
+}
+
+.horario-card h2 {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.horario-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.horario-item {
+    background: var(--color-background);
+    border-radius: 12px;
+    padding: 12px 0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.horario-item:hover {
+    transform: scale(1.02);
+    background: #ffeaea;
+}
+
+.horario-item span {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.horario-item strong {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.horario-item.cerrado strong {
+    color: #d80000;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #b00000;
+    margin-top: 10px;
+}
+
+.contacto i {
+    font-size: 1.1rem;
+}
+
+.horario-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 20px;
+    background-image: url('../Images/idea.webp');
+    background-repeat: no-repeat;
+    background-position: center 41%;
+    background-size: 100% auto;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+/* POLITICA */
 .politica {
     padding: 7rem 0;
     background-color: var(--color-surface);

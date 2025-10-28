@@ -347,3 +347,87 @@ body.dark-mode .blog-post-content h4 {
 body.dark-mode .blog-post-content p {
     color: #cccccc;
 }
+
+/* === HORARIO - MODO OSCURO === */
+body.dark-mode .horario-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 20px;
+    background: var(--color-surface);
+    background-image: url('../Images/idea.webp');
+    background-repeat: no-repeat;
+    background-position: center 41%;
+    background-size: 100% auto;
+    overflow: hidden;
+    z-index: 0;
+}
+
+body.dark-mode .horario-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); 
+    z-index: 0;
+}
+
+body.dark-mode .horario-card {
+    position: relative;
+    z-index: 1; 
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    color: #eee;
+    border-radius: 28px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.15), inset 0 0 8px rgba(255, 255, 255, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+body.dark-mode .horario-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 40px rgba(255, 50, 50, 0.3);
+}
+
+body.dark-mode .icon-container {
+    background: radial-gradient(circle at 30% 30%, #ff2a2a, #7a0000);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+}
+
+body.dark-mode .icon-container i {
+    color: var(--color-surface);
+    filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.5));
+}
+
+body.dark-mode .horario-card h2 {
+    color: #ff3333;
+    text-shadow: 0 0 8px rgba(255, 40, 40, 0.3);
+}
+
+body.dark-mode .horario-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+body.dark-mode .horario-item:hover {
+    transform: scale(1.02);
+    background: rgba(255, 50, 50, 0.15);
+}
+
+body.dark-mode .horario-item strong {
+    color: #fff;
+}
+
+body.dark-mode .horario-item.cerrado strong {
+    color: #ff4d4d;
+}
+
+body.dark-mode .horario-item span {
+    color: #ccc;
+}
+
+body.dark-mode .contacto {
+    color: #ff4d4d;
+    text-shadow: 0 0 6px rgba(255, 70, 70, 0.2);
+}

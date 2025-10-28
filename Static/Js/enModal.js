@@ -92,7 +92,7 @@ document.querySelectorAll('.btn-modal').forEach(btn => {
                             <a href="${joinURL(BASE_URL, img.link)}" class="collage-item" target="_blank" rel="noopener noreferrer">
                                 <img src="${joinURL(BASE_URL, img.src)}" alt="${data.title}">
                                 <div class="collage-overlay">
-                                    <span>Ver más</span>
+                                    <span>See more</span>
                                 </div>
                             </a>
                         `).join('')}

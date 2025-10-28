@@ -7,7 +7,7 @@ const postsData = [
         "Full Services cumple tres décadas de crecimiento, compromiso y excelencia. Gracias a nuestros colaboradores y clientes por ser parte de esta historia. ¡Vamos por muchos años más de logros y servicio!",
     category: "Succeses",
     date: "1995-05-25",
-    image: "Static/Images/FULL-BLOG.jpg",
+    image: "Static/Images/FULL-BLOG.webp",
     },
     {
     id: 2,
@@ -17,16 +17,16 @@ const postsData = [
         "The health of our employees is important to us, and we are confident that these techniques will be beneficial to your company and team.",
     category: "News",
     date: "2023-06-30",
-    image: ["Static/Images/noticia1.jpg",
-        "Static/Images/noticia2.jpg",
-        "Static/Images/noticia3.jpg",
-        "Static/Images/noticia4.jpg",
-        "Static/Images/noticia5.jpg",
-        "Static/Images/noticia6.jpg",
-        "Static/Images/noticia7.jpg",
-        "Static/Images/noticia8.jpg",
-        "Static/Images/noticia9.jpg",
-        "Static/Images/noticia10.jpg"]
+    image: ["Static/Images/noticia1.webp",
+        "Static/Images/noticia2.webp",
+        "Static/Images/noticia3.webp",
+        "Static/Images/noticia4.webp",
+        "Static/Images/noticia5.webp",
+        "Static/Images/noticia6.webp",
+        "Static/Images/noticia7.webp",
+        "Static/Images/noticia8.webp",
+        "Static/Images/noticia9.webp",
+        "Static/Images/noticia10.webp"]
     },
     {
     id: 3,
@@ -36,7 +36,7 @@ const postsData = [
         "The emergency drill was carried out successfully, demonstrating good coordination and commitment on the part of all employees. The evacuation was orderly and allowed us to verify the effectiveness of our safety protocols.ió comprobar la efectividad de nuestros protocolos de seguridad.",
     category: "Events",
     date: "2025-10-24",
-    image: "Static/Images/hse.jpg",
+    image: "Static/Images/hse.webp",
     },
 ];
 
@@ -75,7 +75,7 @@ function createPostCard(post) {
         <article class="blog-post-card" data-category="${post.category}">
         <div class="blog-post-header">
         <div class="blog-post-avatar">
-            <img src="Static/Images/full.jpg" alt="logo" />
+            <img src="Static/Images/full.webp" alt="logo" />
         </div>
         <div class="blog-post-info">
             <h3>${post.author}</h3>

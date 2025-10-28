@@ -25,7 +25,7 @@ const serviceData = {
             We have a fully equipped workshop for the application of special welding, maintenance, and the laying and construction of flow lines for oil, gas, and water.
             We also carry out the construction of facilities for wellheads and metallic structures, as well as supply workshop trucks equipped with diesel systems and welders certified under API and ASME standards.
         `,
-        images: ["Static/Images/FULL-SI.jpg", "Static/Images/FULL-SI1.jpg"],
+        images: ["Static/Images/FULL-SI.webp", "Static/Images/FULL-SI1.webp"],
         whatsapp: "https://wa.link/mi5n03"
     },
     3: {
@@ -33,7 +33,7 @@ const serviceData = {
         content: `
             We have competent personnel and machinery for the construction of oilfield locations, earthworks, supply of selected granular materials, soil improvement and stabilization using both traditional and advanced methods, waterproofing, construction of infrastructure for wastewater treatment and disposal, sumps, slabs, and complementary works such as fencing, sheds, and sewer systems.
         `,
-        images: ["Static/Images/FULL-OBRAS.jpg", "Static/Images/FULL-OBRAS4.jpg"],
+        images: ["Static/Images/FULL-OBRAS.webp", "Static/Images/FULL-OBRAS4.webp"],
         whatsapp: "https://wa.link/94tqjk"
     },
     4: {
@@ -41,7 +41,7 @@ const serviceData = {
         content: `
             We provide sustainable and innovative architectural solutions, covering the design, planning, and complete execution of projects with identity and cutting-edge technology.
         `,
-        images: ["Static/Images/FULL-ARQ1.jpg", "Static/Images/FULL-ARQ2.jpg"],
+        images: ["Static/Images/FULL-ARQ1.webp", "Static/Images/FULL-ARQ2.webp", "Static/Images/FULL-ARQ3.webp", "Static/Images/FULL-ARQ4.webp"],
         whatsapp: "https://wa.link/94tqjk"
     },
     5: {
@@ -49,7 +49,7 @@ const serviceData = {
         content: `
             We offer a wide variety of transportation equipment and complementary services such as cranes ranging from 40 to 110 tons, loaders from 4 to 12 tons, heavy-duty trucks, articulated booms, tractor-trailers, lowboys, and trucks from 2 to 12 tons, among others.
         `,
-        images: ["Static/Images/FULL-TRANSPORTE1.jpg", "Static/Images/FULL-TRANSPORTE2.jpg"],
+        images: ["Static/Images/FULL-TRANSPORTE1.webp", "Static/Images/FULL-TRANSPORTE2.webp"],
         whatsapp: "https://wa.link/9po59q"
     },
     6: {
@@ -58,14 +58,14 @@ const serviceData = {
             We are manufacturers of trailer bodies with a capacity of 30 or 35 tons, and exterior dimensions up to Length: 12.50 m, Width: 2.60 m. The entire structure includes a 7-way connector, LED lighting system, 12v power system, and polyurethane paint finish. Certified under ISO9001, ISO14001, and ISO45001 standards.
         `,
         images: [
-            { src: "Static/Images/Trailers/1.jpg", link: "Translate/Servicios/enServicio1.html" },
-            { src: "Static/Images/Trailers/2.jpg", link: "Translate/Servicios/enServicio1.html" },
-            { src: "Static/Images/Trailers/3.jpg", link: "Translate/Servicios/enServicio1.html" },
-            { src: "Static/Images/Trailers/5.jpg", link: "Translate/Servicios/enServicio1.html" },
-            { src: "Static/Images/Trailers/6.jpg", link: "Translate/Servicios/enServicio1.html" },
-            { src: "Static/Images/Trailers/7.jpg", link: "Translate/Servicios/enServicio1.html" },
-            { src: "Static/Images/Trailers/8.jpg", link: "Translate/Servicios/enServicio1.html" },
-            { src: "Static/Images/Trailers/9.jpg", link: "Translate/Servicios/enServicio1.html" }
+            { src: "Static/Images/Trailers/1.webp", link: "Translate/Servicios/enServicio1.html" },
+            { src: "Static/Images/Trailers/2.webp", link: "Translate/Servicios/enServicio1.html" },
+            { src: "Static/Images/Trailers/3.webp", link: "Translate/Servicios/enServicio1.html" },
+            { src: "Static/Images/Trailers/5.webp", link: "Translate/Servicios/enServicio1.html" },
+            { src: "Static/Images/Trailers/6.webp", link: "Translate/Servicios/enServicio1.html" },
+            { src: "Static/Images/Trailers/7.webp", link: "Translate/Servicios/enServicio1.html" },
+            { src: "Static/Images/Trailers/8.webp", link: "Translate/Servicios/enServicio1.html" },
+            { src: "Static/Images/Trailers/9.webp", link: "Translate/Servicios/enServicio1.html" }
         ],
         whatsapp: "https://wa.link/mi5n03"
     }

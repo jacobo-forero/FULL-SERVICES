@@ -25,7 +25,7 @@ const serviceData = {
             Contamos con un taller completo para la aplicación de soldaduras especiales, mantenimiento, tendido de construcción de líneas de flujo para crudo, gas y agua.
             Construcción de facilidades para cabezales y de estructuras metálicas, suministro de carros talleres con equipos diesel y soldadores con competencia API y ASME.
         `,
-        images: ["Static/Images/FULL-SI.jpg", "Static/Images/FULL-SI1.jpg"],
+        images: ["Static/Images/FULL-SI.webp", "Static/Images/FULL-SI1.webp"],
         whatsapp: "https://wa.link/mi5n03"
     },
     3: {
@@ -33,7 +33,7 @@ const serviceData = {
         content: `
             Contamos con maquinaria personal competente para la construcción de locaciones petroleras, movimientos de tierra, suministro de materiales granulares seleccionados, mejoramiento y estabilización de suelos con métodos tradicionales y de avanzada, impermeabilizaciones, construcción de infraestructura para el tratamiento evacuación de agua residual, contrapozos y placas, construcción de obras complementarias como cerramientos, casetas, alcantarillados.
         `,
-        images: ["Static/Images/FULL-OBRAS.jpg", "Static/Images/FULL-OBRAS4.jpg"],
+        images: ["Static/Images/FULL-OBRAS.webp", "Static/Images/FULL-OBRAS4.webp"],
         whatsapp: "https://wa.link/94tqjk"
     },
     4: {
@@ -41,7 +41,7 @@ const serviceData = {
         content: `
             Ofrecemos soluciones arquitectónicas sostenibles e innovadoras, abarcando diseño, planificación y ejecución integral de proyectos con identidad y tecnología.
         `,
-        images: ["Static/Images/FULL-ARQ1.jpg", "Static/Images/FULL-ARQ2.jpg", "Static/Images/FULL-ARQ3.jpg", "Static/Images/FULL-ARQ4.jpg"],
+        images: ["Static/Images/FULL-ARQ1.webp", "Static/Images/FULL-ARQ2.webp", "Static/Images/FULL-ARQ3.webp", "Static/Images/FULL-ARQ4.webp"],
         whatsapp: "https://wa.link/94tqjk"
     },
     5: {
@@ -49,7 +49,7 @@ const serviceData = {
         content: `
             Disponemos de una gran variedad de equipos de transporte y que a la vez brindan otros servicios como son: Grúas de 40 hasta 110 Ton, cargadores de 4 hasta 12 ton, carro machos, brazos articulados, tractomulas, cama bajas, camiones de 2 hasta 12 Ton, entre otros.
         `,
-        images: ["Static/Images/FULL-TRANSPORTE1.jpg", "Static/Images/FULL-TRANSPORTE2.jpg"],
+        images: ["Static/Images/FULL-TRANSPORTE1.webp", "Static/Images/FULL-TRANSPORTE2.webp"],
         whatsapp: "https://wa.link/mi5n03"
     },
     6: {
@@ -58,14 +58,14 @@ const serviceData = {
             ¡Somos fabricantes de carrocerías con capacidad de 30 o 35 Toneladas, con dimensiones exteriores hasta de Largo: 12,50 m, Ancho: 2,60 m. Toda la estructura cuenta con su respetivo conector 7 vías, luces LED, sistema 12v y acabado en pintura poliuretano. Certificaciones ISO9001, ISO14001 e ISO45001.
         `,
         images: [
-        { src: "Static/Images/Trailers/1.jpg", link: "Templates/Servicios/Trailers1.html" },
-        { src: "Static/Images/Trailers/2.jpg", link: "Templates/Servicios/Trailers2.html" },
-        { src: "Static/Images/Trailers/3.jpg", link: "Templates/Servicios/Trailers3.html" },
-        { src: "Static/Images/Trailers/5.jpg", link: "Templates/Servicios/Trailers5.html" },
-        { src: "Static/Images/Trailers/6.jpg", link: "Templates/Servicios/Trailers6.html" },
-        { src: "Static/Images/Trailers/7.jpg", link: "Templates/Servicios/Trailers7.html" },
-        { src: "Static/Images/Trailers/8.jpg", link: "Templates/Servicios/Trailers8.html" },
-        { src: "Static/Images/Trailers/9.jpg", link: "Templates/Servicios/Trailers9.html" }
+        { src: "Static/Images/Trailers/1.webp", link: "Templates/Servicios/Trailers1.html" },
+        { src: "Static/Images/Trailers/2.webp", link: "Templates/Servicios/Trailers2.html" },
+        { src: "Static/Images/Trailers/3.webp", link: "Templates/Servicios/Trailers3.html" },
+        { src: "Static/Images/Trailers/5.webp", link: "Templates/Servicios/Trailers5.html" },
+        { src: "Static/Images/Trailers/6.webp", link: "Templates/Servicios/Trailers6.html" },
+        { src: "Static/Images/Trailers/7.webp", link: "Templates/Servicios/Trailers7.html" },
+        { src: "Static/Images/Trailers/8.webp", link: "Templates/Servicios/Trailers8.html" },
+        { src: "Static/Images/Trailers/9.webp", link: "Templates/Servicios/Trailers9.html" }
     ],
         whatsapp: "https://wa.link/2ogans"
     }
